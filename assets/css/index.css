@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: darkslategrey;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    animation-name: trippy;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes trippy {
+    0% {color: yellow}
+    25% {color: limegreen}
+    50% {color: blue}
+    75% {color: blueviolet}
+    100% {color: yellow}
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.map-grid {
+    display: grid;
+    grid: repeat(4, min-content) / repeat(4, min-content);
+    grid-gap: 15px;
+}
+
+.slot {
+    width: fit-content;
+    position: relative;
+    transition: 0.3s;
+}
+
+.slot:hover {
+    box-shadow: 0 6px 20px lightgray;
+}
+
+.slot img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.text-container {
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    color: white;
+    width: 100%;
+    top: 30%;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.slot-number {
+    color: white;
+    background: dimgray;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    padding: 6px;
+    font-size: 20px;
+}
