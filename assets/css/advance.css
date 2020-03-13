@@ -1,0 +1,48 @@
+body {
+    background: darkslategrey;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    margin: 30px;
+    font-size: 40px;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.backward, .forward {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.backward {
+    background: url('https://img.icons8.com/plasticine/2x/arrow.png');
+    transform: rotate(180deg);
+}
+
+.forward {
+    background: url('https://img.icons8.com/plasticine/2x/arrow.png');
+}
+.niekur {
+    background: url('https://www.clipartkey.com/mpngs/m/13-134856_iaia-abuela-abuelita-granny-grandma-grandmother-grandma.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+
+}
